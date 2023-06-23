@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TruffleHealth-Demo/static/css/main.e6c13ad2.css",
-    "main.js": "/TruffleHealth-Demo/static/js/main.582d19ad.js",
+    "main.js": "/TruffleHealth-Demo/static/js/main.97adcc76.js",
     "index.html": "/TruffleHealth-Demo/index.html",
     "main.e6c13ad2.css.map": "/TruffleHealth-Demo/static/css/main.e6c13ad2.css.map",
-    "main.582d19ad.js.map": "/TruffleHealth-Demo/static/js/main.582d19ad.js.map"
+    "main.97adcc76.js.map": "/TruffleHealth-Demo/static/js/main.97adcc76.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.582d19ad.js"
+    "static/js/main.97adcc76.js"
   ]
 }
