@@ -30,7 +30,7 @@ function LoginPage() {
         //Make API call here to login and obtain necessary access token / load data from backend
         values.accessToken = "123456789";
         dispatch(login(values));
-        navigate("/");
+        navigate("/TruffleHealth-Demo");
         resolve();
       }, 1000);
     });
