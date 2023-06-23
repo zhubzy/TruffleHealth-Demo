@@ -19,7 +19,7 @@ const Nav = () => {
     // Invalidate access toke here
     dispatch(loginOut())
     // Redirect to login page
-    navigate("/TruffleHealth-Demo/login");
+    navigate("/login");
   };
 
   return (
@@ -35,14 +35,14 @@ const Nav = () => {
       bg={"gray.200"}
     >
       <Text fontSize="xl" fontWeight="bold">
-        <Link to="/TruffleHealth-Demo">Truffle Health Home</Link>
+        <Link to="/">Truffle Health Home</Link>
       </Text>
 
       <Spacer />
 
       <Flex alignItems="center">
         <Text fontSize="md" mr="10">
-          <Link to="/TruffleHealth-Demo/form">Fill out a form</Link>
+          <Link to="/form">Fill out a form</Link>
         </Text>
         <Text fontSize="md" onClick={handleLogout} style={{ cursor: "pointer" }}>
           Logout

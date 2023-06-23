@@ -17,7 +17,7 @@ export default function SummaryPage() {
         dispatch(add(formData));
         dispatch(del_temp());
 
-        navigate("/TruffleHealth-Demo");
+        navigate("/");
         setIsLoading(false);
         resolve();
       }, 500);

@@ -45,7 +45,7 @@ export default function MedicalForm() {
         values.file = selectedFile;
         // dispatch(add(values));
         dispatch(set_temp(values));
-        navigate("/TruffleHealth-Demo/summary");
+        navigate("/summary");
         resolve();
     });
   }

@@ -18,7 +18,7 @@ import { selectUser } from './features/dataSlice';
 import { useSelector } from 'react-redux';
 const ProtectedRoute = ({
   user,
-  redirectPath = '/TruffleHealth-Demo/login',
+  redirectPath = '/login',
   children,
 }) => {
 
@@ -31,12 +31,12 @@ const ProtectedRoute = ({
 };
 
 const router = (
-  <Router>
+  <Router basename='/TruffleHealth-Demo'>
     <Routes>
-      <Route path="/TruffleHealth-Demo" element={<div> <ProtectedRoute><Nav/><Home/></ProtectedRoute></div>}></Route>
-      <Route path="/TruffleHealth-Demo/form" element={<div><ProtectedRoute><Nav /><MedicalForm /></ProtectedRoute></div>} />
-      <Route path="TruffleHealth-Demo/summary" element={<div><ProtectedRoute><SummaryPage /></ProtectedRoute></div>} />
-      <Route path="TruffleHealth-Demo/login" element={<div><LoginPage /></div>} />
+      <Route path="/" element={<div> <ProtectedRoute><Nav/><Home/></ProtectedRoute></div>}></Route>
+      <Route path="/form" element={<div><ProtectedRoute><Nav /><MedicalForm /></ProtectedRoute></div>} />
+      <Route path="/summary" element={<div><ProtectedRoute><SummaryPage /></ProtectedRoute></div>} />
+      <Route path="/login" element={<div><LoginPage /></div>} />
       <Route path="*" element={<p>There's nothing here: 404!</p>} />
     </Routes>
   </Router>
